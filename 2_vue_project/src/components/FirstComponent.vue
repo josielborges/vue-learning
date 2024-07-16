@@ -1,11 +1,20 @@
 <script>
 export default {
-  name: 'FirstComponent'
+  name: 'FirstComponent',
+  data() {
+    return {
+      name: 'Josiel',
+      profession: 'Programmer'
+    }
+  }
 }
 </script>
 
 <template>
-  <h1>Hello Vue!</h1>
+  <div>
+    <h1>Hello Vue!</h1>
+    <p>My name is {{ name }} and I am a {{ profession }}</p>
+  </div>
 </template>
 
 <style scoped>
